@@ -1,0 +1,335 @@
+@import url(http://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|Droid+Serif:bold);
+body{
+	font-family: "Source Sans Pro",sans-serif;
+}
+/************* header ***************/
+.container{
+	width:90%;
+}
+header{
+
+	background-color: #E5E5E5;
+}
+.headtop {
+	padding: 50px 0 0 0;
+}
+.border1 {
+	border-bottom: 1px solid #eaeaea;
+}
+/*-------- Logo -------- */
+.navbar-brand_ {
+	float: none;
+	display: block;
+	position: relative;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	font-size: 4em;
+	font-family: Rancho;
+}
+.navbar-brand_ a{
+	color: black;
+	text-decoration: none;
+}
+.navbar-brand_ img {
+	max-width: 100%;
+	width:150px;
+	margin-top: -50px;
+}
+.navbar-brand_ a:hover {
+	text-decoration: none;
+}
+/*-----------------navbar---------------------*/
+.navbar-toggle {
+    margin-top: -70px
+}
+.menuheader {
+	float: left;
+	position: relative;
+	border-bottom: 1px solid #EAEAEA;
+	margin-bottom: 10px;
+}
+.tm_navbar {
+	position: relative;
+	padding: 10px 0 10px;
+	margin: 0;
+	background: none;
+	border: none;
+}
+.tm_navbar .nav {
+	float: none;
+	position: relative;
+	display: inline-block;
+	margin-left: 50px;
+}
+.tm_navbar ul {
+	position: relative;
+	padding: 0;
+	margin-top: -40px;
+	background: none;
+	list-style: none;
+}
+.tm_navbar .nav li:first-child {
+	position: relative;
+	zoom: 1;
+	background: none;
+	padding: 0 20px 0 2px;
+}
+.tm_navbar .nav li {
+	float: left;
+	padding: 0 20px 0 19px;
+	position: relative;
+	zoom: 1;
+}
+.tm_navbar .nav li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #343434;
+	font-family: 'Arial', serif;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: normal;
+	background: transparent;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	text-shadow: none;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.tm_navbar .nav > li > a .sf-sub-indicator {
+	background: url(../img/indicator.png) no-repeat 0 bottom;
+	width: 7px;
+	height: 4px;
+	display: inline-block;
+	top: 25px;
+	right: 23px;
+	position: absolute;
+	z-index: 5;
+}
+.tm_navbar .nav li a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
+	color: #f4b317;
+	text-decoration: none;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.tm_navbar .nav > .active > a, .tm_navbar .nav > .active > a:hover, .tm_navbar .nav > .active > a:focus {
+	color: #f4b317;
+	background: transparent;
+}
+.tm_navbar .nav > li.sfHover.active > a .sf-sub-indicator, .tm_navbar .nav > li.active > a .sf-sub-indicator {
+	color: #f4b317;
+	background-position: 0 0;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.tm_navbar .nav > li.sfHover > a, .tm_navbar .nav > li.sfHover > a:hover, .tm_navbar .nav > li > a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
+	color: #f4b317;
+	background: transparent;
+	-webkit-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+#navbar .navbar-search{
+	margin-top: -10px;
+}
+/************** header end **************/
+/************** content start **************/
+#contenu{
+	margin-bottom: 15px;
+}
+.ins{
+	border: solid 1px black;
+	border-radius: 10px;
+	padding: 5px 5px;
+}
+#formu{
+	padding-top: 10px;
+	margin-top: 20px;
+}
+#formu input{
+	margin-bottom: 10px;
+}
+#imgins{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+#valid p{
+	font-size: 18px;
+}
+.maj{
+	text-transform: capitalize;
+}
+.country{
+	text-transform: uppercase;
+}
+#tab{
+	margin: auto;
+}
+.tr{
+	width:100%;
+	margin: auto;
+
+}
+/************** content end **************/
+/************** footer **************/
+footer {
+	border-top: 1px solid #f0f0f0;
+}
+.privacy {
+	padding: 59px 0 40px;
+	margin-left: 66px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Trebuchet MS', serif;
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #5b5b5b;
+	position: relative;
+	z-index: 10;
+}
+.privacy img {
+	margin: 0 10px;
+}
+.privacy a {
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #a1a1a1;
+}
+.privacy a:hover {
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #f4b317;
+	text-decoration: none;
+}
+/************** footer end **************/
+/*-------------- media queries -------------------*/
+/**********************************************************/
+@media (min-width: 1220px) {
+.container {
+	padding: 0;
+}
+}
+/**********************************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+.container{
+	width: 100%;
+}
+.tm_navbar .nav li:first-child {
+	padding: 0 20px 0 4px;
+}
+.tm_navbar .nav li {
+	padding: 0 20px 0 20px;
+	zoom: 1;
+}
+.nav-collapse_ .nav > li {
+	float: left;
+}
+.navbar_ {
+	width: auto!important;
+	overflow: visible !important;
+	height: auto;
+	clear: none;
+}
+.tm_navbar .nav {
+	margin-left: 20px;
+}
+}
+/**********************************************************/
+@media (max-width: 767px) {
+.container{
+	width: 100%;
+}
+#navbar .nav{
+	margin-top: 15px;
+}
+#navbar .navbar-search{
+	width: 100%;
+}
+.privacy {
+	margin-left: 0;
+}
+.tm_navbar {
+	position: relative;
+	padding: 40px 0 10px;
+}
+.tm_navbar ul {
+	margin-top: 0px;
+}
+.tm_navbar .nav {
+	margin-left: 0;
+}
+.social_icons {
+	margin: 10px 0 20px 0;
+}
+.menuheader {
+	float: none;
+	position: relative;
+}
+.sf-menu {
+	display: none !important;
+}
+.select-menu {
+	display: block !important;
+	color: #ffffff;
+	border: 1px solid #343434;
+	background: #343434 !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+.select-menu option {
+	padding: 0;
+}
+}
+/**********************************************************/
+@media (max-width: 535px) {
+.navbar-brand_ {
+	font-size: 3em;
+}
+.tm_navbar .nav li:first-child {
+    padding: 0px 30px 0px 3px;
+}
+.tm_navbar .nav li{
+	padding: 0 30px 0 3px;
+}
+}
+/**********************************************************/
+@media (max-width: 480px) {
+.navbar-brand_ {
+	font-size: 2em;
+}
+#valid h3{
+	font-size: 18px;
+}
+#valid p{
+	font-size: 15px;
+}
+}
+@media (max-width: 380px) {
+.navbar-brand_ {
+	font-size: 1.5em;
+}
+.tm_navbar .nav li:first-child {
+    padding: 0px 10px 0px 1px;
+}
+.tm_navbar .nav li{
+	padding: 0 10px 0 1px;
+}
+#valid h3{
+	font-size: 15px;
+}
+#valid p{
+	font-size: 13px;
+}
+}
+/*Core variables and mixins*/
+img {
+	max-width: 100%;
+}

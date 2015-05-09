@@ -1,0 +1,128 @@
+.encart{
+  background-image: url(../img/loup.jpg);
+  background-position: -400px;
+  box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.35) inset;
+  background-repeat: no-repeat;
+  background-color: #000;
+  padding: 0px 0px 20px !important;
+  height: 450px;
+  width: 100%;
+  clear: both;
+}
+
+/* Featurettes
+------------------------- */
+.marketing{
+  box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.35) inset;
+  margin:0;
+  width:100%;
+}
+.featurette{
+  box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.35) inset;
+  padding: 60px 60px;
+  color: #E95325;
+  font-weight: lighter;
+}
+.featurette .text{
+  margin-top: 5%;
+}
+/* Thin out the marketing headings */
+.featurette h2{
+  font-size: 19px;
+  line-height: 26px;
+  margin: 0px 0px 10px;
+}
+.featurette p{
+  font-size: 14px;
+  color: #565656;
+}
+/*--------------social----------------*/
+#ico{
+  width:100%;
+  padding: 60px 0;
+}
+.social_icons {
+  overflow: hidden;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+  margin: auto;
+  width: -moz-fit-content;
+  position: relative;
+  z-index: 10;
+}
+.social_icons > li {
+  float: left;
+  cursor: pointer;
+  width: 77px;
+  height: 76px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+.social_icons > li a {
+  width: 77px;
+  height: 76px;
+  overflow: hidden;
+}
+.social_icons > li a img {
+  position: relative;
+  top: 0;
+  width:100%;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+.social_icons > li a:hover img {
+  position: relative;
+  top: -76px;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+ /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+  .carousel-caption{
+  left:50%;
+  width:40%;
+}
+}
+@media (max-width: 991px) {
+  .carousel-inner > .item > img {
+  width:90%;
+  height:auto;
+  top: auto;
+  left: 5%;
+}
+.fluston{
+  color: #FFF;
+  }
+  }
+@media (max-width: 565px) {
+.carousel-inner > .item > img {
+  width:100%;
+  height:auto;
+  top: 7.5%;
+  left: 0px;
+}
+.first-slide{
+  top:0%;
+  margin-top: 25%;
+}
+}

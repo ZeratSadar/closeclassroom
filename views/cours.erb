@@ -1,0 +1,35 @@
+<div id="cursus" class="container">
+	<div id="tab" class="container">
+		<div class="row">
+			<div id="navleft" class="col-md-3 static">
+				<div id="info" class="col-nav col-nav--search"></div>
+			</div>
+			<div id="tuto" class="col-md-9">
+				<div class="course-list">
+					<ul class="row row--fixed row--fixed-fourth-9">
+						<% @dota.each do |d| %>
+							<a href="/cours/<%= d.id %>"><li class="col-md-4">
+								<div class="celltuto">
+									<div class="visu">
+										<div class="contimg">
+											<div class="imglang"></div>
+										</div>
+										<div class="titletuto cah"><%=h d.title %></div>
+										<div class="describloc">
+                							<span class="titletuto"><%=h d.title %></span>
+											<div class="describ"><%=h d.description %></div>
+            							</div>
+            							<div class="creat"><i class="fa fa-user"></i>  <%=h d.author_first %> <%=h d.author_name %></div>
+									</div>
+									<div class="sup">
+										<p>Programmez en <%=h d.language %></p>
+									</div>
+								</div>
+							</li></a>
+						<% end %>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
